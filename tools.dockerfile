@@ -23,6 +23,6 @@ COPY install_sireum.sh /install_sireum.sh
 RUN chmod +x /install_sireum.sh
 
 # Run the install script to download and install Sireum
-RUN SIREUM_VERSION=${SIREUM_VERSION} /install_sireum.sh
+RUN SIREUM_V=${SIREUM_VERSION} /install_sireum.sh
 
 
