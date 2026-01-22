@@ -1,14 +1,14 @@
 DOCKERHUB ?= ghcr.io
 NAMESPACE ?= loonwerks
 PREFIX ?= $(DOCKERHUB)/$(NAMESPACE)/inspecta-
-DOCKER_TAG ?= 4.20250721.f13c8b0e 
+DOCKER_TAG ?= 4.20250825.20d1bda
 TOOLS_IMG := $(PREFIX)tools
 USER_BASE_IMG := $(TOOLS_IMG)
 USER_IMG := $(PREFIX)user-img
 HOST_DIR ?= $(shell pwd)
 
 DOCKER_BUILD ?= docker build
-DOCKER_FLAGS ?= --force-rm=true
+DOCKER_FLAGS ?= --no-cache --force-rm=true
 
 .PHONY: base_tools rebuild_base_tools
 base_tools:
