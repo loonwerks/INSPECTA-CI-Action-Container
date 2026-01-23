@@ -1,7 +1,7 @@
 DOCKERHUB ?= ghcr.io
 NAMESPACE ?= loonwerks
 PREFIX ?= $(DOCKERHUB)/$(NAMESPACE)/inspecta-
-DOCKER_TAG ?= 4.20250825.20d1bda
+DOCKER_TAG ?= latest
 TOOLS_IMG := $(PREFIX)tools
 USER_BASE_IMG := $(TOOLS_IMG)
 USER_IMG := $(PREFIX)user-img
@@ -15,7 +15,7 @@ base_tools:
 	docker pull debian:bookworm-slim
 	$(DOCKER_BUILD) $(DOCKER_FLAGS) \
 		--build-arg SIREUM_VERSION=$(DOCKER_TAG) \
-		-f tools.dockerfile \
+		-f Dockerfile \
 		-t $(TOOLS_IMG):$(DOCKER_TAG) \
 		.
 rebuild_base_tools: DOCKER_FLAGS += --no-cache

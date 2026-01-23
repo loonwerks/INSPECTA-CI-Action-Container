@@ -1,7 +1,7 @@
 # Container image that runs your code
 FROM debian:bookworm-slim
 LABEL org.opencontainers.image.source="https://github.com/loonwerks/INSPECTA-CI-Action-Container"
-ARG SIREUM_VERSION=4.20250721.f13c8b0e
+ARG SIREUM_VERSION=4.20250825.20d1bda
 
 # Fetch some basics
 RUN apt-get update -q \
