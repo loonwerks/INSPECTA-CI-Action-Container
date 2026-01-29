@@ -3,7 +3,7 @@
 set -Eeuxo pipefail
 
 : "${SIREUM_DIR:=Sireum}"
-: "${SIREUM_V:=4.20250721.f13c8b0e}"
+: "${SIREUM_V:=4.20260115.7c92e7f9}"
 
 mkdir -p $SIREUM_DIR/bin
 pushd $SIREUM_DIR/bin

@@ -1,7 +1,7 @@
 DOCKERHUB ?= ghcr.io
 NAMESPACE ?= loonwerks
 PREFIX ?= $(DOCKERHUB)/$(NAMESPACE)/inspecta-
-DOCKER_TAG ?= latest
+DOCKER_TAG ?= 4.20260115.7c92e7f9
 TOOLS_IMG := $(PREFIX)ci-action-container
 USER_BASE_IMG := $(TOOLS_IMG)
 USER_IMG := $(PREFIX)user-img
