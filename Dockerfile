@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM debian:bookworm-slim
+FROM debian:trixie-slim
 LABEL org.opencontainers.image.source="https://github.com/loonwerks/INSPECTA-CI-Action-Container"
 ARG SIREUM_VERSION=master
 
