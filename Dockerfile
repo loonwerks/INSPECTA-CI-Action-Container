@@ -7,6 +7,7 @@ ARG SIREUM_VERSION=master
 RUN apt-get update -q \
     && apt-get install -y --no-install-recommends \
         ca-certificates \
+        cloc \
         curl \
         git \
         jq \
